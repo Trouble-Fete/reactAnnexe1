@@ -9,15 +9,16 @@ const pokemonList = [
 	},
 	{
 		name: "mew",
+		// imgSrc:
+		// 	"https://th.bing.com/th?id=OIP.gmf81-NSyFWgZXDz3ejbHAHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
 	},
 ];
 
 function App() {
 	return (
 		<div>
-			<PokemonCard
-				pokemon={/* put a pokemon from pokemonList here */ pokemonList[0]}
-			/>
+			<PokemonCard name={pokemonList[0].name} imgSrc={pokemonList[0].imgSrc} />
+			{/* <PokemonCard name={pokemonList[1].name} imgSrc={pokemonList[1].imgSrc} /> */}
 		</div>
 	);
 }
