@@ -5,8 +5,12 @@ interface Pokemon {
 
 function PokemonCard({ name, imgSrc }: Pokemon) {
 	return (
-		<figure>
-			{imgSrc ? <img src={imgSrc} alt={name} /> : <p>???</p>}
+		<figure className="card">
+			{imgSrc ? (
+				<img src={imgSrc} alt={name} className="card-img" />
+			) : (
+				<p>???</p>
+			)}
 			<figcaption>{name}</figcaption>
 		</figure>
 	);
