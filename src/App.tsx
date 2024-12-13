@@ -2,6 +2,7 @@ import PokemonCard from "./components/PokemonCard";
 import "./App.css";
 import { useState } from "react";
 import NavBar from "./components/NavBar";
+import MyTitle from "./components/MyTitle";
 
 const pokemonList = [
 	{
@@ -40,6 +41,7 @@ function App() {
 
 	return (
 		<div className="page">
+			<MyTitle />
 			<NavBar setPokemonIndex={setPokemonIndex} pokemonList={pokemonList} />
 			<PokemonCard
 				name={pokemonList[pokemonIndex].name}

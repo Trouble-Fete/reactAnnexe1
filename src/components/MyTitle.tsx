@@ -1,5 +1,9 @@
 function MyTitle() {
-	return <h1>Hello React</h1>;
+	return (
+		<div className="header">
+			<h1 className="h1">POKEMON, Attrappez les tous ! ! ! </h1>
+		</div>
+	);
 }
 
 export default MyTitle;
