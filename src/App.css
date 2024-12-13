@@ -3,11 +3,13 @@
 	padding: 0;
 }
 .page {
-	width: 100%;
-	padding: 1rem;
+	margin: 0;
+	font-family: Arial, sans-serif;
+	background: linear-gradient(to bottom, red, black, white);
+	height: 100vh;
 	display: flex;
-	align-items: center;
 	justify-content: center;
+	align-items: center;
 	flex-direction: column;
 }
 
@@ -18,16 +20,20 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	background-color: yellow;
 	color: black;
 	font-size: 3rem;
 	padding: 3rem;
+	border: 2px solid black;
+	box-shadow: 10px 10px 10px gray;
 }
 
 .card-img {
 	display: flex;
 	background-color: white;
 	border-radius: 10px;
+	max-width: 475px;
+	max-height: 475px;
+	border: 2px solid black;
 }
 
 .navbar {
@@ -47,4 +53,24 @@
 	justify-content: center;
 	align-items: center;
 	border-radius: 5px;
+}
+
+.Fire {
+	background-color: rgb(190, 43, 43);
+}
+
+.Grass {
+	background-color: rgb(31, 139, 31);
+}
+
+.Psychic {
+	background-color: rgb(167, 30, 167);
+}
+
+.Electric {
+	background-color: rgb(219, 219, 11);
+}
+
+.Water {
+	background-color: rgb(62, 62, 223);
 }
