@@ -1,6 +1,6 @@
 import PokemonCard from "./components/PokemonCard";
 import "./App.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import NavBar from "./components/NavBar";
 import MyTitle from "./components/MyTitle";
 
@@ -31,13 +31,16 @@ const pokemonList = [
 	},
 	{
 		name: "mew",
-		imgSrc: "/src/assets/Mew-11.jpeg",
+		imgSrc: "/src/assets/Mew-11.webp",
 		type: "Psychic",
 	},
 ];
 
 function App() {
 	const [pokemonIndex, setPokemonIndex] = useState(0);
+	useEffect(() => {
+		alert("hello pokemon trainer :)");
+	}, []);
 
 	return (
 		<div className="page">
